@@ -1,5 +1,6 @@
 package com.group3.hackadam;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -31,7 +32,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View v) {
     if(v.getId()==startButton.getId()) {
-        //intent
+        Intent i = new Intent(this, SettingsActivity.class);
     }
     else {
         if(v.getId()==libraryButton.getId()) {
